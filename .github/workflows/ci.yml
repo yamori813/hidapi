@@ -36,3 +36,4 @@ jobs:
             missing
             hidtest/Makefile.in
             pc/hidapi.pc.in
+            libusb/Makefile.in
