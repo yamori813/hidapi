@@ -21,7 +21,6 @@ jobs:
         with:
           name: store configure
           path: |
-            aclocal.m4
             ar-lib
             autom4te.cache
             compile
@@ -38,3 +37,5 @@ jobs:
             **/**.am
             **.ac
             **/**.ac
+            **.m4
+            **/**.m4
