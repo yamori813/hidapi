@@ -35,4 +35,4 @@ jobs:
             ltmain.sh
             missing
             hidtest/Makefile.in
-
+            pc/hidapi.pc.in
