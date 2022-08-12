@@ -12,7 +12,7 @@ jobs:
       - name: Install packages
         run: | 
           sudo apt-get -qq update
-          sudo apt-get -qq install autoconf automake
+          sudo apt-get -qq install autoconf
       - name: autoconf 
         run: |
           ./bootstrap
@@ -21,21 +21,4 @@ jobs:
         with:
           name: store configure
           path: |
-            ar-lib
-            autom4te.cache
-            compile
-            config.guess
-            config.sub
-            configure
-            depcomp
-            install-sh
-            ltmain.sh
-            missing
-            **.in
-            **/**.in
-            **.am
-            **/**.am
-            **.ac
-            **/**.ac
-            **.m4
-            **/**.m4
+            **
