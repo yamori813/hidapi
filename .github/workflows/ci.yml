@@ -16,4 +16,9 @@ jobs:
       - name: autoconf 
         run: |
           ./bootstrap
+      - name: Archive configure
+        uses: actions/upload-artifact@v3
+        with:
+          name: store configure
+          path: configure
 
