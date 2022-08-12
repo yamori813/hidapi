@@ -1,0 +1,19 @@
+name: build
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install packages
+        run: | 
+          sudo apt-get -qq update
+          sudo apt-get -qq install autoconf
+      - name: autoconf 
+        run: |
+          ./bootstrap
+
