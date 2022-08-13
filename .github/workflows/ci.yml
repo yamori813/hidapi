@@ -12,11 +12,10 @@ jobs:
       - name: Install packages
         run: | 
           sudo apt-get -qq update
-          sudo apt-get -qq install autoconf automake
+          sudo apt-get -qq install autoconf automake libtool
       - name: autoconf 
         run: |
           ./bootstrap
-          make
       - name: Archive configure
         uses: actions/upload-artifact@v3
         with:
