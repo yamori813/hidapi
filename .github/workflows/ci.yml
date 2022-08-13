@@ -12,7 +12,7 @@ jobs:
       - name: Install packages
         run: | 
           sudo apt-get -qq update
-          sudo apt-get -qq install autoconf automake libtool
+          sudo apt-get -qq install autotools-dev autoconf automake libtool
       - name: autoconf 
         run: |
           ./bootstrap
